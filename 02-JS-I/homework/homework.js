@@ -97,7 +97,7 @@ function tienenMismaLongitud(str1, str2) {
 
 }
 
-tienenMismaLongitud('cubo', 'tres');
+tienenMismaLongitud('dos', 'tres');
 
 
 function menosQueNoventa(num) {
@@ -183,20 +183,32 @@ elevarAlCubo(3);
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+  var elevado = Math.pow(num, exponent);
+  return elevado;
   
 }
+
+elevar(3, 4);
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
+  var redondeo = Math.round(num);
+  return redondeo;
   
 }
+
+redondearNumero(6.7);
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
+  var redondeoArriba = Math.ceil(num);
+  return redondeoArriba;
   
 }
+
+redondearHaciaArriba(9.1);
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
