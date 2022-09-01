@@ -98,7 +98,7 @@ function tienenMismaLongitud(str1, str2) {
 
 }
 
-tienenMismaLongitud('dos', 'tres');
+tienenMismaLongitud('uno', 'dos');
 
 
 function menosQueNoventa(num) {
