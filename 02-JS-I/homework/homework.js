@@ -163,14 +163,22 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+  var elevarCuadrado = math.pow(num, 2);
+  return elevarCuadrado;
   
 }
+
+elevarAlCuadrado(3);
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  var elevarQubo = math.pow(num, 3);
+  return elevarQubo;
   
 }
+
+elevarAlCubo(3);
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
