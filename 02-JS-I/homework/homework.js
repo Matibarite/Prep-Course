@@ -97,7 +97,7 @@ function tienenMismaLongitud(str1, str2) {
 
 }
 
-tienenMismaLongitud('uno', 'dos');
+tienenMismaLongitud('uno', 'tres');
 
 
 function menosQueNoventa(num) {
@@ -151,8 +151,13 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num % 2 !== 0) {
+    return true;
+  }
+    return false;
 }
+
+esImpar(1);
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
