@@ -319,7 +319,7 @@ function esVocal(letra){
   //Escribe tu código aquí
 
 
-  if(letra.length > 1 && letra != 'a' && letra != 'e' && letra != 'i' && letra != 'o' && letra != 'u'){
+  if(letra.length > 1 && letra !== 'a' && letra !== 'e' && letra !== 'i' && letra !== 'o' && letra !== 'u'){
     return 'Dato incorrecto';
   } else {
     return 'Es vocal';
