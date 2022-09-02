@@ -169,7 +169,7 @@ function esPrimo(numero) {
   */
   for (numero > 1; (numero / numero) === 0 && (numero / 1) === numero; numero++){
     return true;
-  }
+  } return false;
 }
 
 function esVerdadero(valor){
