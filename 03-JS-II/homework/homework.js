@@ -113,11 +113,13 @@ function estaEnRango(numero) {
   // Tu código:
   if(numero >= 50 && numero <= 20){
     return true;
+  }else {
+    return false;
   }
 
 }
 
-estaEnRango(25);
+estaEnRango(35);
 
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
