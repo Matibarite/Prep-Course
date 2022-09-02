@@ -183,7 +183,8 @@ function esVerdadero(valor){
   //Escribe tu código aquí
   if(valor = true){
     return 'Soy verdadero';
-  }
+  }return 'Soy falso';
+  
 }
 
 
@@ -191,11 +192,6 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-  for (let i=0; i < 10; i++){
-    function argumentos(){
-      return Array.isArray(argumentos);
-    }
-  }   
 }
 
 function tieneTresDigitos(numero){
