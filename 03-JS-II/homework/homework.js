@@ -161,10 +161,14 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
 
-  if((numero / numero) === 0 || (numero / 1) === numero){
+  /*if((numero / numero) === 0 || (numero / 1) === numero){
     return true;
   } else {
     return false;
+  }
+  */
+  for (numero >= 1; (numero / numero) === 0 && (numero / 1) === numero; numero++){
+    return true;
   }
 }
 
