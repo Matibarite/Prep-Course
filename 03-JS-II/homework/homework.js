@@ -51,7 +51,21 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  switch (idioma){
+    case 'aleman':
+      return 'Guten Tag!';
+    case 'mandarin':
+      return 'Ni hao!';
+    case 'ingles':
+      return 'Hello!';
+      break;
+    default:
+      return 'Hola!'
+  }
+  
 }
+
+saludo(aleman);
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
