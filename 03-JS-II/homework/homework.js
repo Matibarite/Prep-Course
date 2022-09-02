@@ -167,9 +167,9 @@ function esPrimo(numero) {
     return false;
   }
   */
-  for (numero >= 1; (numero / numero) === 0 && (numero / 1) === numero; numero++){
+  for (numero > 1; (numero / numero) === 0 && (numero / 1) === numero; numero++)
     return true;
-  }
+  
 }
 
 function esVerdadero(valor){
