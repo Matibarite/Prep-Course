@@ -167,11 +167,11 @@ function esPrimo(numero) {
     return false;
   }
   */
-  for ( let i = 2; i < numero ; i++){
+  for ( let i = 1; i < numero ; i++){
     if(numero % i === 0){
-      return true;
-    } else {
       return false;
+    } else {
+      return true;
     }
   }
 }
