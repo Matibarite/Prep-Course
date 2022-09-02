@@ -169,9 +169,9 @@ function esPrimo(numero) {
   */
   for ( let i = 1; i < numero ; i++){
     if(numero % i === 0){
-      return false;
-    } else {
       return true;
+    } else {
+      return false;
     }
   }
 }
