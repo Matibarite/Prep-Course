@@ -65,7 +65,7 @@ function saludo(idioma) {
   
 }
 
-saludo(aleman);
+saludo('aleman');
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
