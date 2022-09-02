@@ -55,7 +55,7 @@ function saludo(idioma) {
     case 'aleman':
       return 'Guten Tag!';
     case 'mandarin':
-      return 'Ni hao!';
+      return 'Ni Hao!';
     case 'ingles':
       return 'Hello!';
       break;
@@ -75,7 +75,23 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch (color){
+    case 'blue':
+      return 'This is blue';
+    case 'red':
+      return 'This is red';
+    case 'green':
+      return 'This is green';
+    case 'orange':
+      return 'This is orange';
+      break;
+    default:
+      return 'Color not found';
+  }
+
 }
+
+colors('blue');
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
