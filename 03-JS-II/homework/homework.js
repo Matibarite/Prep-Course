@@ -183,11 +183,9 @@ function esVerdadero(valor){
   //Escribe tu código aquí
   if(valor = true){
     return 'Soy verdadero';
-  }else (valor = false){
-    return ' Soy falso';
   }
-
 }
+
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
