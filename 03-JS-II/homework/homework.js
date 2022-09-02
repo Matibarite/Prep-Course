@@ -111,12 +111,12 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(numero >= 20){
-    return true;
-  }else if(numero <= 50){
-    return true;
-  }else {
+  if(numero < 20){
     return false;
+  }else if(numero > 50){
+    return false;
+  }else {
+    return true;
   }
 
 }
