@@ -327,7 +327,7 @@ function esVocal(letra){
     
   }
 
-esVocal('a');
+esVocal('b');
 
 // No modificar nada debajo de esta línea
 // --------------------------------
