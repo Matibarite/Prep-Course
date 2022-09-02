@@ -167,9 +167,13 @@ function esPrimo(numero) {
     return false;
   }
   */
-  for (numero > 1; (numero / numero) === 0 && (numero / 1) === numero; numero++){
-    return true;
-  } return false;
+  for ( let i = 2; i < numero ; i++){
+    if(numero % i === 0){
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
 function esVerdadero(valor){
