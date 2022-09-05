@@ -181,9 +181,9 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if(valor = true){
+  if(valor !== false){
     return 'Soy verdadero';
-  }else if(valor = false){
+  }else {
     return 'Soy falso';
   } 
   
@@ -202,7 +202,11 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if(numero.length === 3){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function doWhile(numero) {
