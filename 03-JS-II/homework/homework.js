@@ -202,12 +202,14 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero.length === 3){
-    return true;
-  }else{
+  var redondeo = Math.round(numero)
+
+  if(redondeo.length != 3){
     return false;
-    console.log(numero.length)
+  } else {
+    return true;
   }
+  
 }
 
 function doWhile(numero) {
