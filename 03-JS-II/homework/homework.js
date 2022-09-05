@@ -203,9 +203,9 @@ function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   if(numero.length === 3){
-    return false;
-  }else if(numero.length !== 3){
     return true;
+  }else if(numero.length !== 3){
+    return false;
   }
   
 }
