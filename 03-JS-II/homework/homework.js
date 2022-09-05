@@ -216,11 +216,11 @@ function doWhile(numero) {
   let i = 0;
 
   do {
-    aumento = numero + 5;
+    numero = numero + 5;
     i++;
   }while (i < 8){
   }
-  return aumento;
+  return numero;
 }
 
 
