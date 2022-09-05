@@ -204,9 +204,10 @@ function tieneTresDigitos(numero){
   //Escribe tu código aquí
   if(numero.length === 3){
     return false;
-  } else{
+  }else if(numero.length !== 3){
     return true;
   }
+  
 }
 
 function doWhile(numero) {
