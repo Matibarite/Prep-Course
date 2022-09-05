@@ -206,6 +206,7 @@ function tieneTresDigitos(numero){
     return true;
   }else{
     return false;
+    console.log(numero.length)
   }
 }
 
