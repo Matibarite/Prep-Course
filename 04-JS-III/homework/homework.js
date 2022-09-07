@@ -79,12 +79,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  let total = 0;
   for (let i = 0; i < numeros.length; i++){
-    Math.round(numeros[i]);
-    numeros[i]++;
+    total += numeros[i];
   }
-  var suma = reduce(numeros);
-  return suma;
+  return total;
 }
 
 
@@ -92,6 +91,12 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  let total = 0;
+  for (let i = 0; i < resultadosTest.length; i++){
+    var suma = total += resultadosTest[i];
+    promedio = suma / resultadosTest.length; 
+  }
+  return promedio;
 }
 
 
@@ -99,6 +104,10 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  function comparar(a, b){
+    return a - b;
+  } numeros.sort(comparar);
+  return numeros[numeros.length - 1];
 }
 
 
@@ -106,12 +115,21 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  if(arguments[0] === undefined){
+    return 0;
+  } else{
+    var multiplicacion = 1
+    for(i = 0; i <arguments.length; i++){
+      multiplicacion = multiplicacion * arguments[i];
+    } 
+      return multiplicacion;
+  }
 }
-
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  
 
 }
 
