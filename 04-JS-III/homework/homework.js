@@ -80,7 +80,7 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   for (let i = 0; i < numeros.length; i++){
-    var entero = math.round(numeros[i]);
+    Math.round(numeros[i]);
     numeros[i]++;
   }
   var suma = reduce(numeros);
