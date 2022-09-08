@@ -134,12 +134,7 @@ function cuentoElementos(arreglo){
     if(arreglo[i] > 18){
       mayores++;
     }
-    return mayores;
-  } 
-
-
-  
-
+  } return mayores;
 }
 
 
@@ -147,24 +142,40 @@ function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-  //Escribe tu código aquí   
-  
+  //Escribe tu código aquí
+  if(numeroDeDia !== 1 && numeroDeDia !== 7){
+    return 'Es dia Laboral';
+  } else {
+    return 'Es fin de semana';
+  }
 } 
+
 
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  var numero = 9;
+
+  if(n.toString().includes(numero)){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí  
-  
+  //Escribe tu código aquí
+  var resultado = arreglo.every(element => {
+    if (element === arreglo[0]){
+      return true;
+    }
+  });
+  return resultado;
 } 
 
 
