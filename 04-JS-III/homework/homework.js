@@ -184,25 +184,17 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  /*newArray = [];
-  
-  
-  for (i = 0; i < array.length; i++){
-    if(array[i] == 'Enero' || array[i] == 'Marzo' || array[i] == 'Noviembre'){
-      newArray.push(array[i]);
-    } else{
-      newArray = 'No se encontraron los meses pedidos';
-    }
-  } return newArray;
-  */
   nuevoarray= [];
-  arrayOrdenado = array.sort();
   
-  for(i = 0; i < arrayOrdenado.length; i++){
-    if(arrayOrdenado[i] == 'Enero' || arrayOrdenado[i] == 'Marzo' || arrayOrdenado[i] == ' Noviembre'){
+  for(i = 0; i < array.length; i++){
+    if(array[i] == 'Enero' || array[i] == 'Marzo' || array[i] == 'Noviembre'){
       nuevoarray.push(array[i]);
-    }
-  } return nuevoarray;
+    } 
+  } if(nuevoarray.length < 3){
+    return 'No se encontraron los meses pedidos'
+  } else {
+    return nuevoarray;
+  }
 }
 
 
@@ -210,7 +202,15 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  nuevoarray = [];
+
+  for(i = 0; i < array.length; i++){
+    if(array[i] > 100){
+      nuevoarray.push(array[i]);
+    }
+  } return nuevoarray;
 }
+
 
 
 function breakStatement(numero) {
@@ -221,6 +221,15 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  resultado = numero + 2;
+  array = [resultado];
+
+  for(i = 0; i <= 15; i++){
+    array.push(array[i]+=2);
+    if (i === 10){
+      break;
+    }
+  } return array;
 }
 
 
