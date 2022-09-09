@@ -171,7 +171,7 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí
   var resultado = arreglo.every(element => {
-    if (element === arreglo[0]){
+    if (element === arreglo[0]) {
       return true;
     }
   });
@@ -184,6 +184,25 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  /*newArray = [];
+  
+  
+  for (i = 0; i < array.length; i++){
+    if(array[i] == 'Enero' || array[i] == 'Marzo' || array[i] == 'Noviembre'){
+      newArray.push(array[i]);
+    } else{
+      newArray = 'No se encontraron los meses pedidos';
+    }
+  } return newArray;
+  */
+  nuevoarray= [];
+  arrayOrdenado = array.sort();
+  
+  for(i = 0; i < arrayOrdenado.length; i++){
+    if(arrayOrdenado[i] == 'Enero' || arrayOrdenado[i] == 'Marzo' || arrayOrdenado[i] == ' Noviembre'){
+      nuevoarray.push(array[i]);
+    }
+  } return nuevoarray;
 }
 
 
