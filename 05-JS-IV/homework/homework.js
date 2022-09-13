@@ -6,15 +6,14 @@ function crearGato (nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-    var gato = {
-      nombre: nombre,
-      edad: edad,
-    }
-    var nuevoMetodo = {
-      decirMeow: function() {
-        return 'Meow!';
-      }
-    }
+  var nuevoGato = {
+    nombre: nombre,
+     edad: edad,
+     meow: function(){
+       return 'Meow!'
+     }
+  }; 
+  return nuevoGato; 
 }
 
 function agregarPropiedad (objeto, property) {
@@ -22,6 +21,8 @@ function agregarPropiedad (objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+  objeto[property] = null;
+  return objeto;
 }
 
 function invocarMetodo (objeto, metodo) {
@@ -29,13 +30,18 @@ function invocarMetodo (objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+  objeto[metodo]();
+
 }
 
 function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-
+  numero = objetoMisterioso.numeroMisterioso;
+  producto = numero * 5;
+  
+  return producto;
 }
 
 function eliminarPropiedad (objeto, unaPropiedad) {
@@ -43,19 +49,28 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  delete objeto[unaPropiedad];
+  return objeto;
 }
 
 function nuevoUsuario (nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-
+  var usuarioNuevo = {
+    nombre : nombre,
+    email : email,
+    password : password,
+  }; return usuarioNuevo;
 }
+
+
 
 function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+  return usuario[email];
 }
 
 function tienePropiedad (objeto, propiedad) {
